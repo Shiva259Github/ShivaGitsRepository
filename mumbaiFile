@@ -17,3 +17,47 @@ def main():
     func2()
 main()
 
+
+
+
+class Computer:
+    def __init__(self):
+        self.name = "Shiva"
+        self.age = 59
+    def update(self):
+        self.age = 30
+
+    def compare(self, other):
+        if self.age == other.age:
+            return True
+        else:
+            return False
+
+    # def __init__(self, cpu, ram):
+    #     self.cpu = cpu
+    #     self.ram = ram
+
+    def config(self):
+        print("Config is: ", self.cpu, self.ram)
+
+# com1 = Computer('i5', 16)
+# com2 = Computer('Ryzen-3', 8)
+# #print(type(com1))
+# com1.config()
+# com2.config()
+
+c1 = Computer()
+c2 = Computer()
+
+c2.name = "Rashi"
+c2.age = 59
+
+c1.update()
+
+if c1.compare(c2):
+    print("They have same age.")
+else:
+    print("They are of diffrent age.")
+
+print(c1.name, c1.age)
+print(c2.name, c2.age)
