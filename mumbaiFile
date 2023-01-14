@@ -1,0 +1,19 @@
+def main():
+    print("Hello")
+    print("Welcome User ")
+
+if __name__ == "__main__":
+    main()
+
+def func1():
+    add()
+    print("I am from func1.")
+
+def func2():
+    print("I am from func2.")
+
+def main():
+    func1()
+    func2()
+main()
+
